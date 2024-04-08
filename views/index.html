@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BVC Sport</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+          body {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0; /* Remove default margin */
+    }
+    
+    #container {
+        background-color: aliceblue;
+        width: 60vw;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px; /* Add padding for better spacing */
+    }
+    
+    h1 {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 20px; /* Add margin to separate from form */
+    }
+    
+    #formRegister {
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    label {
+        display: block; /* Ensure labels are displayed on their own line */
+        margin-bottom: 10px; /* Add margin below labels */
+    }
+    
+    input, textarea, select {
+        width: 100%; /* Make input fields take up full width */
+        padding: 8px; /* Add padding for better spacing */
+        margin-bottom: 15px; /* Add margin below input fields */
+        border-radius: 5px; /* Add border radius for a softer look */
+        border: 1px solid #ccc; /* Add border for clarity */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+    
+    button[type="submit"] {
+        width: 100%; /* Make submit button take up full width */
+        padding: 10px; /* Add padding for better clickability */
+        background-color: #4CAF50; /* Green background color */
+        color: white; /* White text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add border radius */
+        cursor: pointer; /* Add cursor pointer on hover */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+    
+    #confirmation{
+        display: block;
+        background-color: antiquewhite;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 1vw;
+    }
+    
+        </style>
+      </head>
+    <body>
+<body>
+    <div id="container">
+        <h1>Registration ome piroba</h1>
+        <form id="formRegister" action="/register" method="post" target="_blank"> <!-- Aquí está el cambio -->
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br><br>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+                <option value="volunteer">Volunteer</option>
+            </select><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
